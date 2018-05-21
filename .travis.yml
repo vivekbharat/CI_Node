@@ -1,4 +1,3 @@
-#-------- More orLess the same -------#
 language: node_js
 node_js:
   - "8"
@@ -6,7 +5,6 @@ dist: trusty
 services:
   - mongodb
   - redis-server
-#-------- More orLess the same -------#
 env:
   - NODE_ENV=ci PORT=3000
 cache:
@@ -18,5 +16,5 @@ install:
   - npm run build
 script:
   - nohup npm run start &
-  - sleep 3
+  - sleep 5
   - npm run test

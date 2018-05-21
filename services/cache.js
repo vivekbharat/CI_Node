@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const redis = require('redis');
 const util = require('util');
-const keys = reuqire('../config/keys');
+const keys = require('../config/keys');
 
 
 //const redisUrl = 'redis://127.0.0.1:6379';
